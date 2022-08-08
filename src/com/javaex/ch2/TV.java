@@ -7,7 +7,7 @@ public class TV {
 	private boolean power;
 	
 	public TV() {
-		super();
+		this(7, 20, false); //이런 식으로 작성을 하면 밑에있는 TV생성자가 호출이 된다.
 	}
 	
 	public TV(int channel, int volume, boolean power) {
@@ -31,7 +31,7 @@ public class TV {
 		}else {
 			System.out.println("TV가 꺼졌습니다.");
 		}
-		power = on;
+		this.power = on;
 	}
 	
 	public void channel(int channel) {
@@ -44,10 +44,17 @@ public class TV {
 	
 	public void channel(boolean up) {
 		if(up) {
-			channel++;
+			if(this.channel == 255) {
+				System.out.println("채널 변경이 불가능합니다.");
+			}else {
+				this.channel++;
+			}
 			System.out.println("현재 채널번호 : "+channel);
 		}else {
-			channel--;
+			if(this.channel == 1) {
+				System.out.println("채널 변경이 불가능합니다.");
+			}
+			this.channel--;
 			System.out.println("현재 채널번호 : "+channel);
 		}
 	}
@@ -76,6 +83,7 @@ public class TV {
 		}else {
 			System.out.println("현재 채널은 " + channel + "번이고 음량은 "+ volume + "입니다.");
 		}
+		
 	}
 	
 	

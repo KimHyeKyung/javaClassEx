@@ -4,7 +4,7 @@ public class TVApp {
 
 	public static void main(String[] args) {
 		
-		TV tv = new TV(7, 20, false);
+		TV tv = new TV();
 		
 		tv.status();
 		
