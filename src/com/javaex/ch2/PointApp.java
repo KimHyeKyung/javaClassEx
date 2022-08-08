@@ -10,6 +10,11 @@ public class PointApp {
 		point1.draw();
 		point2.draw();
 
+		point1.draw(true);
+		point2.draw(true);
+		
+		point1.draw(false);
+		point2.draw(false);
 	}
 
 }

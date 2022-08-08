@@ -22,6 +22,11 @@ public class Song {
 		this.year = year;
 		this.track = track;
 	}
+	
+	//노래 제목과 가수만 입력받아 필드를 초기화하는 생성자
+	public Song(String title, String artist) {
+		this(title, artist, null, null, 0, 0);
+	}
 
 	public String getTitle() {
 		return title;
@@ -94,7 +99,7 @@ public class Song {
 	}
 	
 	public void showInfo() {
-		System.out.println(artist + " ," + title + "( " + album + " ," + year + " ," + track + "번 track, " + composer + " 작곡 )");
+		System.out.println(this.artist + ", " + this.title + "( " + this.album + ", " + this.year + ", " + this.track + "번 track, " + this.composer + " 작곡 )");
 	}
 	
 	
