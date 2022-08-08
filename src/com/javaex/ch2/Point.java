@@ -42,5 +42,9 @@ public class Point {
 		}
 		
 	}
+
+	public void showInfo() {
+		this.draw();
+	}
 	
 }

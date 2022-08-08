@@ -15,6 +15,7 @@ public class PointApp {
 		
 		point1.draw(false);
 		point2.draw(false);
+	
 	}
 
 }
