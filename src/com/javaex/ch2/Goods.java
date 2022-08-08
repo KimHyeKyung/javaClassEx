@@ -30,6 +30,10 @@ public class Goods {
 		this.price = price;
 	}
 	
+	public void showInfo(String name, int price) {
+		System.out.println("상품이름 : " + name);
+		System.out.println("가격 : " + price);
+	}
 	
 	
 }
