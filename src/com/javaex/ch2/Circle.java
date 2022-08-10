@@ -1,7 +1,7 @@
 package com.javaex.ch2;
 
 //Shape추상클래스를 상속받음
-public class Circle extends Shape{
+public class Circle extends Shape implements Drawable{
 
 	private int radius;
 	
@@ -25,5 +25,12 @@ public class Circle extends Shape{
 	public double area() {
 		return this.radius * this.radius * 3.14; 
 	}
+
+	@Override
+	public void draw() {
+		System.out.println("반지름이"+this.radius+"인 원을 그렸습니다.");
+		
+	}
+
 	
 }

@@ -1,7 +1,7 @@
 package com.javaex.ch2;
 
 //Shape추상클래스를 상속받음
-public class Ractangle extends Shape{
+public class Ractangle extends Shape implements Drawable{
 
 	private int width;
 	private int height;
@@ -43,6 +43,13 @@ public class Ractangle extends Shape{
 	@Override
 	public double area() {
 		return (this.width * this.height);
+	}
+
+
+
+	@Override
+	public void draw() {
+		System.out.println("가로: "+this.width+"이고 세로:"+ this.height +"인 사각형을 그렸습니다.");
 	}
 
 }
