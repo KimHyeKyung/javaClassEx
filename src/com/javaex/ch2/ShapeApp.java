@@ -34,6 +34,23 @@ public class ShapeApp {
 	    // true
 	    System.out.println( c1 instanceof Shape ); 
 
+	    //test1. shape는 밑에 3개를 담을 수 있다.
+//	    Shape s1 = r;
+//	    Shape s2 = c1;
+//		Shape s3 = t;
+//		Shape s4 = new Point(1,2); Point객체는 연결이 안되어있기 때문에 오류가 난다.
+		
+		//test2. test1을 배열화
+		Shape[] shapeArr = {r,c1,t};
+		for(int i=0; i<shapeArr.length; i++) {
+			if(shapeArr[i] instanceof Ractangle) {
+				System.out.println("사각형의 면적은" + shapeArr[i].area());
+			}else if(shapeArr[i] instanceof Triangle) {
+				System.out.println("삼각형의 면적은" + shapeArr[i].area());
+			}else if(shapeArr[i] instanceof Circle) {
+				System.out.println("원의 면적은" + shapeArr[i].area());
+			}
+		}
 		
 		
 		

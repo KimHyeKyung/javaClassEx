@@ -1,6 +1,6 @@
 package com.javaex.ch2;
 
-public class Point {
+public class Point implements Drawable{
 	private int x;
 	private int y;
 	
