@@ -20,6 +20,30 @@ public class StringClassEx {
 		System.out.println(str1.equals(str2));
 		System.out.println(str1.equalsIgnoreCase(str2));
 		
+		
+		String greeting = "Hello JAVA!";
+		System.out.println(greeting.substring(1,3));
+		System.out.println(greeting.substring(0,11));
+		
+		String str = "JAVA Programming"; 
+		
+		//String을 배열로 돌리려면 .length가 아닌 .length()란 메서드로 써야한다!
+		for(int i=0; i<str.length(); i++) {
+			System.out.print(str.charAt(i));
+			System.out.print(" ");
+		}
+		
+		System.out.println();
+		
+		//문자열의 특정 문자를 다른 문자로 바꾸려면 replace를 써야한다!
+		String fruits = "apple mango banana";
+		System.out.println(fruits.replace(" ", ",")); 
+		
+		
+		
+		
+		
+		
 	}
 	
 	
